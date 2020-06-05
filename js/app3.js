@@ -1,3 +1,4 @@
+document.getElementById('resetBTN').addEventListener('click', reset);
 ////////////////////Variables
 const formulario = document.getElementById('agregar-gasto');
 let presupuestoA = 0;
@@ -118,3 +119,8 @@ formulario.addEventListener('submit', function(e) {
         gasto2.calculo();
     }
 });
+
+function reset() {
+
+    location.reload();
+}
